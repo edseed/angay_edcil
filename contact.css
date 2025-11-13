@@ -4,38 +4,39 @@
 }
 
 body {
-  background-image: url("2tap.jpg"); 
-  background-size: cover;  
-  background-repeat: no-repeat; 
-  background-attachment: fixed; 
-  font-family: "inter-uniquifier";
-  font-style: italic;
-  font-weight: bold;
+    background-image: url("2tap.jpg"); 
+    background-size: cover;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    font-family: "inter-uniquifier";
+    font-style: italic;
+    font-weight: bold;
+    background-image: fixed;
 }
 
 #btn-active {
-  color: white;
+    color: white;
 }
 
 .grid-container > div {
-  font-size: 30px;
+    font-size: 30px;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
 }
 
 .portfolio {
-  grid-column: 1 / 11;
-  padding: 5vh 0 3vh 0;
+    grid-column: 1 / 11;
+    padding: 5vh 0 3vh 0;
 }
 
 .portfolio h1 {
-  display: flex;
-  justify-content: center;
-  color: cyan;
-  text-shadow: 
+    display: flex;
+    justify-content: center;
+    color: cyan;
+    text-shadow: 
     -2px -2px 0 black,  
      2px -2px 0 black,
     -2px  2px 0 black,
@@ -43,8 +44,9 @@ body {
 }
 
 .navigation {
-  grid-column: 1 / 11;
-  padding: 2vh 0 5vh 0;
+    grid-column: 1 / 11;
+    padding: 2vh 0 5vh 0;
+    
 }
 
 .navigation ul {
@@ -52,59 +54,64 @@ body {
   display: flex;
   justify-content: center;
   gap: 13vh;
-  transition: all 0.3s ease; 
 }
 
 .navigation li {
-  font-size: 5.5vh;
+   font-size: 5.5vh;
 }
 
 .navigation a {
-  color: deepskyblue;
-  text-decoration: none;
+    color: deepskyblue;
+    text-decoration: none;
 }
 
 .profile-pic {
-  grid-column: 1 / 2;
-  padding: 30px;
+  grid-column: 1 / 11;  
+  grid-row: 3;        
+  display: flex;
+  justify-content: center; 
+  padding: 30px 0;
 }
 
 .profile-pic img {
-  width: 30vw;
+  width: 25vw;
   height: auto;
-  border-radius: 0; 
+  border-radius: 10px; 
 }
 
 .info {
-  grid-column: 2 / 11;
-  padding: 30px;
+  grid-column: 1 / 11;
+  grid-row: 4;          
+  padding: 20px;
 }
 
 .info ul {
   display: flex;
   list-style: none;
   flex-direction: column;
-  justify-content: start;
+  text-align: center;
 }
 
 .info li:nth-child(1) {
-  color: cyan;
-  font-size: 5.5vh;
-  padding-bottom: 10vh;
+    color: cyan;
+    font-size: 5.5vh;
+    padding-bottom: 10vh;
 }
 
-.info li:nth-child(2) {
-  color: #FF8181;
-  font-size: 5.5vh;
+.info li {
+    color: #FF8181;
+    font-size: 4.5vh;
 }
 
 .footer {
-  grid-column: 1/11;
-  text-align: center;
+    grid-column: 1/11;
+    text-align: center;
 }
 
 p {
   color: aqua;
+  padding: 50px;
+  font-size: 4.2vh;
 }
 
 .inter-uniquifier {
@@ -115,8 +122,8 @@ p {
 }
 
 .menu-bar {
-  display: none !important;
-  cursor: pointer; 
+  display: none;
+  cursor: pointer;
 }
 
 .navigation ul.show {
@@ -169,11 +176,10 @@ p {
       display: none !important;
 
     }
-    
   }
 
   .profile-pic {
-    grid-column: 2 / 2;
+    grid-column: 1 / 11;
     grid-row: 3 / 3;
     padding: 0 5vh 3vh 0;
     display: flex;
@@ -185,8 +191,8 @@ p {
   }
 
   .info {
-    grid-column: 3 / 11;
-    grid-row: 3 / 3;
+    grid-column: 1 / 11;
+    grid-row: 4 / 4;
     padding: 1vh 0 0 0;
 
     ul {
@@ -203,10 +209,14 @@ p {
       padding-bottom: 10vh;
     }
 
-    li:nth-child(2) {
-      font-size: 5.3vh;
+    li {
+      font-size: 4vh;
     }
   }
+
+    p {
+      font-size: 3.8vh;
+    }
 }
 
 @media screen and (max-width: 1400px) {
@@ -248,7 +258,7 @@ p {
   }
 
   .profile-pic {
-    grid-column: 2 / 2;
+    grid-column: 1 / 11;
     grid-row: 3 / 3;
     padding: 0 5vh 3vh 0;
     display: flex;
@@ -260,8 +270,8 @@ p {
   }
 
   .info {
-    grid-column: 3 / 11;
-    grid-row: 3 / 3;
+    grid-column: 1 / 11;
+    grid-row: 4 / 4;
     padding: 1vh 0 0 0;
 
     ul {
@@ -278,10 +288,14 @@ p {
       padding-bottom: 10vh;
     }
 
-    li:nth-child(2) {
-      font-size: 4.8vh;
+    li {
+      font-size: 3.7vh;
     }
   }
+
+    p {
+      font-size: 3.5vh;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -323,7 +337,7 @@ p {
   }
 
   .profile-pic {
-    grid-column: 2 / 2;
+    grid-column: 1 / 11;
     grid-row: 3 / 3;
     padding: 0 5vh 3vh 0;
     display: flex;
@@ -335,8 +349,8 @@ p {
   }
 
   .info {
-    grid-column: 3 / 11;
-    grid-row: 3 / 3;
+    grid-column: 1 / 11;
+    grid-row: 4 / 4;
     padding: 1vh 0 0 0;
 
     ul {
@@ -353,10 +367,14 @@ p {
       padding-bottom: 4vh;
     }
 
-    li:nth-child(2) {
-      font-size: 4.4vh;
+    li {
+      font-size: 3.35vh;
     }
   }
+
+    p {
+      font-size: 3.1vh;
+    }
 }
 
 
@@ -399,7 +417,7 @@ p {
   }
 
   .profile-pic {
-    grid-column: 2 / 2;
+    grid-column: 1 / 11;
     grid-row: 3 / 3;
     padding: 0 5vh 3vh 0;
     display: flex;
@@ -411,8 +429,8 @@ p {
   }
 
   .info {
-    grid-column: 3 / 11;
-    grid-row: 3 / 3;
+    grid-column: 1 / 11;
+    grid-row: 4 / 4;
     padding: 1vh 0 0 0;
 
     ul {
@@ -429,10 +447,14 @@ p {
       padding-bottom: 3vh;
     }
 
-    li:nth-child(2) {
-      font-size: 3.4vh;
+    li {
+      font-size: 2.9vh;
     }
   }
+
+    p {
+      font-size: 2.8vh;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -505,10 +527,14 @@ p {
       padding-bottom: 3vh;
     }
 
-    li:nth-child(2) {
-      font-size: 3.2vh;
+    li {
+      font-size: 2.6vh;
     }
   }
+
+    p {
+      font-size: 2.4vh;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -552,7 +578,6 @@ p {
       position: relative;
       top: 3.5vh;
     }
-}
   }
 
   .profile-pic {
@@ -587,15 +612,16 @@ p {
       padding-bottom: 3vh;
     }
 
-    li:nth-child(2) {
-      font-size: 2.8vh;
+    li{
+      font-size: 2.2vh;
     }
   }
+
     p {
       font-size: 2vh;
     }
-  
 
+}
 
 @media screen and (max-width: 400px) {
   .portfolio {
@@ -668,13 +694,13 @@ p {
       padding-bottom: 3vh;
     }
 
-    li:nth-child(2) {
-      font-size: 2.3vh;
+    li {
+      font-size: 1.8vh;
     }
   }
 
     p {
-      font-size: 1.5vh;
+      font-size: 1.7vh;
     }
 }
 
@@ -749,12 +775,13 @@ p {
       padding-bottom: 3vh;
     }
 
-    li:nth-child(2) {
-      font-size: 2vh;
+    li {
+      font-size: 1.4vh;
     }
+    
   }
 
-      p {
-      font-size: 1.5vh;
+    p {
+      font-size: 1.4vh;
     }
 }

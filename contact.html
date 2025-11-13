@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -21,9 +21,9 @@
 
     <div class="navigation">
       <ul>
-        <li><a href="index.html" id="btn-active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="contact.html" id = "btn-active">Contact us</a></li>
       </ul>
       <i class="fa-solid fa-bars menu-bar" onclick="toggleMenu()"></i>
     </div>
@@ -34,27 +34,30 @@
 
     <div class="info">
       <ul>
-        <li>Holla! I'm Edcil R. Angay</li>
-        <li>I want to learn more <br> about computer coding <br> to enhance my skills and <br> someday, I will create my <br> own games.</li>
+        <li>Contact this for more info </li>
+        <li>Facebook: Edcil Angay</li><br>
+        <li>Mobile: +63 9671260724</li><br>
+        <li>Gmail: Eds.Angay@gmail.com</li><br>
       </ul>
     </div>
 
     <div class="footer">
       <p>Copyright @ Eds.Angay2025</p>
+      
     </div>
-
-  </div>
 
   <script>
     function toggleMenu() {
       document.querySelector('.navigation ul').classList.toggle('show');
     }
-    window.addEventListener('resize', function() {
+  window.addEventListener('resize', function() {
     const navList = document.querySelector('.navigation ul');
     if (window.innerWidth > 600 && navList.classList.contains('show')) {
       navList.classList.remove('show');
     }
   });
 </script>
+
+  </div>
 </body>
 </html>
